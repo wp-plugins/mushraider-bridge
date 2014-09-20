@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MushRaider bridge\n"
+"POT-Creation-Date: 2014-09-20 11:16+0100\n"
+"PO-Revision-Date: 2014-09-20 11:16+0100\n"
+"Last-Translator: Stéphane Litou <contact@stephane-litou.com>\n"
+"Language-Team: MushRaider <contact@mushraider.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: E:\\www\\wamp\\www\\mushraider_wp\\wp-content\\plugins"
+"\\mushraider-bridge\n"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:55
+msgid "Settings"
+msgstr "Options"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:56
+msgid "Get MushRaider"
+msgstr "Télécharger MushRaider"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:72
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:216
+msgid "MushRaider"
+msgstr "MushRaider"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:73
+msgid "Bridge Settings"
+msgstr "Paramètres"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:73
+msgid "Bridge settings"
+msgstr "Paramètres"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:74
+msgid "Roles Settings"
+msgstr "Rôles Options"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:74
+msgid "Roles mapping"
+msgstr "Rôles mapping"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:102
+msgid "MushRaider Bridge : Settings"
+msgstr "MushRaider Bridge : Paramètres"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:105
+msgid "Login url (Add it to your MushRaider's admin panel settings)"
+msgstr ""
+"Adresse d'identification (ajouter la dans la page d'administration de votre "
+"installation MushRaider)"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:113
+msgid "API private key"
+msgstr "Clée privée de l'API"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:116
+msgid ""
+"API private key can be found in your MushRaider admin panel under the menu "
+"\"Settings => API\""
+msgstr ""
+"La clée privée de l'API peut être trouvée dans la page d'administration de "
+"votre installation MushRaider sous le menu \"Paramètres => API\""
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:120
+msgid "API url"
+msgstr "Adresse API"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:123
+msgid "URL of your MushRaider install"
+msgstr "Adresse de votre site MushRaider"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:130
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:240
+msgid "Save Changes"
+msgstr "Sauvegarder"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:134
+msgid ""
+"To display your roster in pages you need to use the shortcode "
+"[mushraider_roster game=\"game_id\"]. The \"game_id\" parameter is optional "
+"and can be found in your MushRaider website."
+msgstr ""
+"Pour afficher votre roster dans une page vous devez utiliser le shortcode "
+"[mushraider_roster game=\"game_id\"]. Le paramètre \"game_id\" est optionnel "
+"et peut être trouvé dans votre installation MushRaider."
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:198
+msgid "MushRaider Bridge : Roles mapping"
+msgstr "MushRaider Bridge : Mapping des rôles"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:202
+#, php-format
+msgid ""
+"To get your custom roles set in MushRaider you have to configure the <a href="
+"\"%s\">bridge settings page</a>"
+msgstr ""
+"Pour paramétrer les rôles personnalisés de votre site MushRaider vous devez "
+"d'abord configurer la <a href=\"%s\">page des paramètres du bridge</a>"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:204
+msgid ""
+"Roles mapping is usefull to set default roles depending on your wordpress "
+"users roles"
+msgstr ""
+"Le mapping des rôles sert à définir les rôles MushRaider par défaut en "
+"fonction des rôles Wordpress"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/mushraider-bridge.php:215
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/shortcodes.php:23
+msgid "Name"
+msgstr "Nom"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/shortcodes.php:24
+msgid "Level"
+msgstr "Niveau"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/shortcodes.php:25
+msgid "Role"
+msgstr "Rôle"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/shortcodes.php:26
+msgid "Classe"
+msgstr "Classe"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/shortcodes.php:27
+msgid "Race"
+msgstr "Race"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/shortcodes.php:28
+#, fuzzy
+msgid "User"
+msgstr "Utilisateur"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:16
+msgid "MushRaider events"
+msgstr "Evénements MushRaider"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:17
+msgid "Display events from your MushRaider website"
+msgstr "Afficher les événements de MushRaider"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:74
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:137
+msgid "day"
+msgstr "jour"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:74
+msgid "days"
+msgstr "jours"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:76
+msgid "Incoming events"
+msgstr "Prochains événements"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:81
+msgid "Title:"
+msgstr "Titre:"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:85
+msgid "Game:"
+msgstr "Jeu:"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:87
+msgid "All"
+msgstr "Tous"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:99
+msgid "Period:"
+msgstr "Période:"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:142
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:147
+msgid "Today at"
+msgstr "Aujourd'hui à"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:145
+msgid "in"
+msgstr "dans"
+
+#: E:\www\wamp\www\mushraider_wp\wp-content\plugins\mushraider-bridge/src/widget_events.php:150
+msgid "Yesterday at"
+msgstr "Hier à"
+
+#~ msgid "MushRaider Bridge : Sync roles"
+#~ msgstr "MushRaider Bridge : Sync roles"
