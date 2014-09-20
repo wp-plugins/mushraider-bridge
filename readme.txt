@@ -13,11 +13,35 @@ MushRaider Bridge is a plugin to integrate MushRaider raid planner into wordpres
 
 MushRaider Bridge allows you to integrate MushRaider into wordpress. MushRaider is a powerful raid planner mainly designed for MMORPG players and guilds.
 
-Features list :
+= Features list =
+
 * Connect to MushRaider using wordpress login
 * Configurable roles mapping
 * Widget displaying incoming events
 * Shortcode to display your roster (using [mushraider_roster game="{optional game id from MushRaider}"])
+
+= Widget =
+
+In the Appearance -> Widgets you'll find the MushRaider bridge widget. After adding it to your sidebar you can enter a title for the Widget, select a game (optional) and a period for the incoming events to display.
+
+= Shortcode =
+
+Display your roster in your pages or posts with this shortcode
+
+`[mushraider_roster]`
+
+Which is the simplest option, and uses all default and optional settings. If you want to display the roster for a specific game you can add the option "game" with the game_id. Example:
+
+`[mushraider_roster  game="1"]`
+
+= Related Links =
+
+* [Official website](http://mushraider.com/
+  "Learn more about MushRaider raid planner")
+* [Support Forum](http://forum.raidhead.com/
+  "Use this for support and feature requests")
+* [GitHub MushRaider](https://github.com/st3ph/mushraider
+  "Get access to the source code")
 
 == Installation ==
 
