@@ -75,10 +75,13 @@ If you encounter difficulties to connect in MushRaider after enabling the bridge
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Update readme
+
+= 1.0.0 =
 * First version
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.0 =
 Enjoy
