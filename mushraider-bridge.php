@@ -3,7 +3,7 @@
 Plugin Name: MushRaider Bridge
 Plugin URI: http://mushraider.com
 Description: MushRaider Bridge allows you to integrate MushRaider into wordpress.
-Version: 1.0.0
+Version: 1.0.2
 Author: Mush
 Author URI: http://mushraider.com
 License: GPL2
@@ -44,6 +44,7 @@ function mushraider_activate() {
     update_option('mushraider_api_key', '');
     update_option('mushraider_api_url', '');
     update_option('mushraider_roles_mapping', '');
+    update_option('mushraider_css', '');
 }
 
 function mushraider_loaded() {
@@ -59,11 +60,17 @@ function mushraider_plugin_action_links($links) {
 }
 
 function mushraider_css() {
+    $custom_css = get_option('mushraider_css');
     echo '<style type="text/css">'."\n";
         echo '.widget_mushraider_bridge_events_widget li { margin-bottom:5px }'."\n";
-        echo '.widget_mushraider_bridge_events_widget .logo { float:left;width:20%;border:0;margin:0 0.5em 0.5em 0 }'."\n";
+        echo '.widget_mushraider_bridge_events_widget .logo { display:inline-block;vertical-align:top;width:10%;border:0;margin:0 0.5em 0.5em 0 }'."\n";
+        echo '.widget_mushraider_bridge_events_widget .logo img { width:100% }'."\n";
+        echo '.widget_mushraider_bridge_events_widget .event { display:inline-block;vertical-align:top; }'."\n";
         echo '.widget_mushraider_bridge_events_widget .time { font-style:italic;font-size:80% }'."\n";
         echo '.mushraider_roster .icon { width:16px }'."\n";
+        if(!empty($custom_css)) {
+            echo $custom_css;
+        }
     echo '</style>'."\n";
 }
 
@@ -95,6 +102,10 @@ function mushraider_render_bridge() {
             update_option('mushraider_api_url', trailingslashit($_POST['mushraider_api_url']));
         }
 
+        if(isset($_POST['mushraider_css'])) {
+            update_option('mushraider_css', $_POST['mushraider_css']);
+        }
+
         echo "<div class='updated fade'><p><strong>Options saved</strong></p></div>";
     }
 	?>
@@ -121,6 +132,13 @@ function mushraider_render_bridge() {
                     <td>
                         <input type="text" name="mushraider_api_url" value="<?php echo get_option('mushraider_api_url'); ?>" style="width:400px" />
                         <p><small><?php echo __('URL of your MushRaider install', 'mushraider');?></small></p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row"><?php echo __('Custom CSS', 'mushraider');?></th>
+                    <td>
+                        <textarea name="mushraider_css" style="width:400px;min-height:100px"><?php echo get_option('mushraider_css'); ?></textarea>
+                        <p><small><?php echo __('Your own CSS to customize the widget display', 'mushraider');?></small></p>
                     </td>
                 </tr>
 				<input type="hidden" name="action" value="update" />
