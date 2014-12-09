@@ -43,7 +43,7 @@ class MushraiderBridgeEvents_Widget extends WP_Widget {
             if(!empty($remoteEvents->events)) {
                 $dWidget = '<ul>';
                     foreach($remoteEvents->events as $event) {
-                        $logo = strpos($event->Game->logo, 'http://') !== false?$event->Game->logo:$this->apiUrl.$event->Game->logo;
+                        $logo = strpos($event->Game->logo, '//') !== false?$event->Game->logo:$this->apiUrl.$event->Game->logo;
                         $dWidget .= '<li>';
                             $dWidget .= '<div class="logo"><img src="'.$logo.'" alt="'.$event->Game->title.'" /></div>';
                             $dWidget .= '<div class="event">';
