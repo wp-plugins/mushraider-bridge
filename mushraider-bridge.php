@@ -3,7 +3,7 @@
 Plugin Name: MushRaider Bridge
 Plugin URI: http://mushraider.com
 Description: MushRaider Bridge allows you to integrate MushRaider into wordpress.
-Version: 1.0.3
+Version: 1.0.4
 Author: Mush
 Author URI: http://mushraider.com
 License: GPL2

@@ -18,7 +18,7 @@ class MushraiderBridgeEvents_Widget extends WP_Widget {
         );
 
         $this->apiKey = get_option('mushraider_api_key');
-        $this->apiUrl = get_option('mushraider_api_url');
+        $this->apiUrl = rtrim(get_option('mushraider_api_url'), '/');
     }
 
     /**
@@ -37,17 +37,17 @@ class MushraiderBridgeEvents_Widget extends WP_Widget {
         $endPoint = '/events/index/end:'.$eventsUntil.'/game:'.$game;
         $hmac = hash_hmac('sha1', $endPoint, $this->apiKey);
         $endPoint .= '/key:'.$hmac;        
-        $remoteEvents = wp_remote_retrieve_body(wp_remote_get($this->apiUrl.'api'.$endPoint.'.json')); // Request
+        $remoteEvents = wp_remote_retrieve_body(wp_remote_get($this->apiUrl.'/api'.$endPoint.'.json')); // Request
         if(!empty($remoteEvents)) {
             $remoteEvents = json_decode($remoteEvents);
             if(!empty($remoteEvents->events)) {
                 $dWidget = '<ul>';
                     foreach($remoteEvents->events as $event) {
-                        $logo = strpos($event->Game->logo, '//') !== false?$event->Game->logo:$this->apiUrl.$event->Game->logo;
+                        $logo = strpos($event->Game->logo, '//') !== false?$event->Game->logo:$this->apiUrl.'/'.trim($event->Game->logo, '/');
                         $dWidget .= '<li>';
                             $dWidget .= '<div class="logo"><img src="'.$logo.'" alt="'.$event->Game->title.'" /></div>';
                             $dWidget .= '<div class="event">';
-                                $dWidget .= '<div class="title"><a href="'.$this->apiUrl.'/events/'.$event->Event->id.'" target="_blank">'.$event->Event->title.'</a></div>';
+                                $dWidget .= '<div class="title"><a href="'.$this->apiUrl.'/events/view/'.$event->Event->id.'" target="_blank">'.$event->Event->title.'</a></div>';
                                 $dWidget .= '<div class="dungeon">'.$event->Dungeon->title.'</div>';
                                 $dWidget .= '<div class="time">'.$this->niceDate($event->Event->time_invitation, true).'</div>';
                             $dWidget .= '</div>';
@@ -69,7 +69,7 @@ class MushraiderBridgeEvents_Widget extends WP_Widget {
         $endPoint = '/games/index';
         $hmac = hash_hmac('sha1', $endPoint, $this->apiKey);
         $endPoint .= '/key:'.$hmac;        
-        $remoteGames = wp_remote_retrieve_body(wp_remote_get($this->apiUrl.'api'.$endPoint.'.json')); // Request
+        $remoteGames = wp_remote_retrieve_body(wp_remote_get($this->apiUrl.'/api'.$endPoint.'.json')); // Request
         // Periods
         $periods = array('1' => '1 '.__('day', 'mushraider'), '3' => '3 '.__('days', 'mushraider'), '5' => '5 '.__('days', 'mushraider'), '7' => '7 '.__('days', 'mushraider'), '10' => '10 '.__('days', 'mushraider'), '15' => '15 '.__('days', 'mushraider'), '30' => '30 '.__('days', 'mushraider'));
 
@@ -128,7 +128,7 @@ class MushraiderBridgeEvents_Widget extends WP_Widget {
         $jours = explode('-', $dates[0]);
         $heures = explode(':', $dates[1]);
 
-        if($date > date('Y-m-d H:i:s')) {
+        if($date > date('Y-m-d H:i:s') && !$preciseDate) {
             $date_a = new DateTime(date('Y-m-d H:i:s'));
             $date_b = new DateTime($date);
             $interval = date_diff($date_a, $date_b);
