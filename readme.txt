@@ -77,7 +77,7 @@ If you encounter difficulties to connect in MushRaider after enabling the bridge
 
 = 1.0.4 =
 * Fix some urls with a trailing slash
-* Fix event remaining time in wdgets
+* Fix event remaining time in widgets
 
 = 1.0.3 =
 * Fix game's logo display (again)
