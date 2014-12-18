@@ -3,8 +3,8 @@ Contributors: Mush
 Donate link: http://mushraider.com/
 Tags: mushraider, raid planner, raid, mmorpg, bridge, planner, calendrier, calendar, tool
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 1.0.4
+Tested up to: 4.1
+Stable tag: 1.0.5
 License: Creative Commons (CC BY-NC-SA 4.0)
 
 MushRaider Bridge is a plugin to integrate MushRaider raid planner into wordpress

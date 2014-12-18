@@ -150,8 +150,7 @@ class MushraiderBridgeEvents_Widget extends WP_Widget {
             $text = __('Yesterday at', 'mushraider');
             return $text.' '.$heures[0].'h'.$heures[1];
         }else {
-            $wording = date('D', mktime(0, 0, 0, $jours[1], $jours[2], $jours[0])).' ';
-            $wording .= $jours[2].' '.(date('M', intval($jours[1]))).' '.$jours[0];
+            $wording = date('D d M Y', strtotime($date));
             return $wording;
         }
     }
