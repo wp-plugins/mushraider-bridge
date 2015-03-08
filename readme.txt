@@ -1,10 +1,10 @@
 === MushRaider Bridge ===
 Contributors: Mush
 Donate link: http://mushraider.com/
-Tags: mushraider, raid planner, raid, mmorpg, bridge, planner, calendrier, calendar, tool
+Tags: mushraider, raid planner, raid, mmorpg, bridge, planner, calendrier, calendar, tool, mush, wow, swtor, rift, archeage, eso
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: Creative Commons (CC BY-NC-SA 4.0)
 
 MushRaider Bridge is a plugin to integrate MushRaider raid planner into wordpress
@@ -74,6 +74,9 @@ If you encounter difficulties to connect in MushRaider after enabling the bridge
 3. MushRaider's side settings
 
 == Changelog ==
+
+= 1.0.6 =
+* Fix games's and classes's logos
 
 = 1.0.4 =
 * Fix some urls with a trailing slash

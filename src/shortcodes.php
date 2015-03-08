@@ -33,11 +33,11 @@ function mushraider_sc_roster($atts, $content = null) {
             if(!empty($remoteCharacters->characters)) {
                 foreach($remoteCharacters->characters as $character) {
                     $output .= '<tr>';
-                        $gameLogo = strpos($character->Game->logo, 'http://') !== false?$character->Game->logo:$apiUrl.$character->Game->logo;
+                        $gameLogo = strpos($character->Game->logo, 'http://') !== false || strpos($character->Game->logo, 'api.raidhead.com') !== false?$character->Game->logo:$apiUrl.$character->Game->logo;
                         $output .= '<td>'.(!empty($character->Game->logo)?'<img src="'.$gameLogo.'" class="icon" /> ':'').$character->Character->title.'</td>';
                         $output .= '<td>'.$character->Character->level.'</td>';
                         $output .= '<td>'.$character->RaidsRole->title.'</td>';
-                        $classeIcon = strpos($character->Classe->icon, 'http://') !== false?$character->Classe->icon:$apiUrl.$character->Classe->icon;
+                        $classeIcon = strpos($character->Classe->icon, 'http://') !== false || strpos($character->Game->logo, 'api.raidhead.com') !== false?$character->Classe->icon:$apiUrl.$character->Classe->icon;
                         $output .= '<td style="color:'.$character->Classe->color.'">'.(!empty($character->Classe->icon)?'<img src="'.$classeIcon.'" class="icon" /> ':'').$character->Classe->title.'</td>';
                         $output .= '<td>'.$character->Race->title.'</td>';
                         $output .= '<td>'.$character->User->username.'</td>';
