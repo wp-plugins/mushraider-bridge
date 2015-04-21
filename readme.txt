@@ -3,7 +3,7 @@ Contributors: Mush
 Donate link: http://mushraider.com/
 Tags: mushraider, raid planner, raid, mmorpg, bridge, planner, calendrier, calendar, tool, mush, wow, swtor, rift, archeage, eso
 Requires at least: 3.0
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 1.0.6
 License: Creative Commons (CC BY-NC-SA 4.0)
 
